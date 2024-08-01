@@ -3,14 +3,15 @@
 import { useSectionInView } from '@/lib/hooks'
 import React from 'react'
 import { LargeSectionHeading } from '../ui/heading';
+import { motion } from 'framer-motion';
 
 export default function About() {
   const { ref } = useSectionInView("About");
   return (
-    <section
+    <motion.section
       ref={ref}
       id='about'
-      className='mb-20 mt-4 text-center scroll-mt-28'
+      className='mb-20 mt-4 scroll-mt-28'
     >
       <LargeSectionHeading>About Me</LargeSectionHeading>
       <p className="mb-3 mx-5 xxl:w-[1200px]">
@@ -29,13 +30,16 @@ export default function About() {
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
-        <span className="italic"> When I'm not coding</span>, I enjoy playing
+      </p>
+
+      <p className='mb-3 mx-5 xxl:w-[1200px]'>
+        <span className="italic">When I'm not coding</span>, I enjoy playing
         video games, anything cars, and being around my friends and family. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">screen printing and graphic design</span>. I'm also
         learning how to start and run a business.
       </p>
-    </section>
+    </motion.section>
   )
 }

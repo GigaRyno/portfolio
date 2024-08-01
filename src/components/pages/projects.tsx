@@ -3,7 +3,7 @@
 import React from "react";
 import { projectData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import ProjectCard from "../projectCard";
+import ProjectCard from "../project-card";
 import { LargeSectionHeading } from "../ui/heading";
 
 export default function Projects() {

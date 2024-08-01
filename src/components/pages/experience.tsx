@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { LargeSectionHeading, ExtraSmallSectionHeading } from '../ui/heading';
 import { experienceData } from '@/lib/data';
 import { useTheme } from '@/context/theme-context';
+import { motion } from 'framer-motion';
 
 
 export default function Experience() {
@@ -19,7 +20,7 @@ export default function Experience() {
   return (
     <section
       ref={ref}
-      id='skills'
+      id='experience'
       className='mb-6 mt-4 text-center scroll-mt-28'
     >
       <LargeSectionHeading>My Experience</LargeSectionHeading>

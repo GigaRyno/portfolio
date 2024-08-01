@@ -1,4 +1,4 @@
-import Headline from "@/components/headline";
+import Headline from "@/components/pages/headline";
 import About from "@/components/pages/about";
 import Experiences from "@/components/pages/experience";
 import Projects from "@/components/pages/projects";

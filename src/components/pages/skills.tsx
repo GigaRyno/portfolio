@@ -14,7 +14,7 @@ export default function Skill() {
     <section
       ref={ref}
       id='skills'
-      className='mb-20 mt-4 text-center scroll-mt-28'
+      className='mb-20 mt-20 text-center scroll-mt-32'
     >
       <LargeSectionHeading>My Skills</LargeSectionHeading>
       <Tabs defaultValue="frontend">

@@ -21,7 +21,7 @@ export default function Experience() {
     <section
       ref={ref}
       id='experience'
-      className='mb-6 mt-4 text-center scroll-mt-28'
+      className='mb-20 mt-20 text-center scroll-mt-32'
     >
       <LargeSectionHeading>My Experience</LargeSectionHeading>
       <VerticalTimeline lineColor={(theme === "light" ? "rgba(0, 0, 0, 0.5)" : "rgba(255, 255, 255, 0.5)")}>
@@ -30,7 +30,7 @@ export default function Experience() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: theme === "light" ? "#F1F5F9" : "rgba(0, 0, 0, 0.05)",
+                background: theme === "light" ? "#F1F5F9" : "rgba(0, 0, 0, 0.4)",
                 boxShadow: "none",
                 border: theme === "light" ? "1px solid rgba(0, 0, 0, 0.15)" : "1px solid rgba(255, 255, 255, 0.15)",
                 textAlign: "left",
@@ -69,10 +69,10 @@ export default function Experience() {
                     Experience:
                   </div>
                 )}
-                <div className="!mt-1 !font-normal !text-sm text-black dark:text-white/75">
+                <div className="!mt-1 !font-normal !leading-6 !text-md text-black dark:text-white/75 pl-5">
                   <ol>
                     {item.description.map((desc, index) => (
-                      <li key={index}>{desc}</li>
+                      <li className='list-disc' key={index}>{desc}</li>
                     ))}
                   </ol>
                 </div>

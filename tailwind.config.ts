@@ -26,6 +26,7 @@ const config = {
     },
     fontFamily: {
       primary: "var(--font-jetbrainsMono)",
+      sans: ["var(--font-roboto)"],
     },
     extend: {
       colors : {

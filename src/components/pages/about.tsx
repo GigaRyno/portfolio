@@ -11,12 +11,12 @@ export default function About() {
     <motion.section
       ref={ref}
       id='about'
-      className='mb-20 mt-4 scroll-mt-28'
+      className='mb-20 mt-20 scroll-mt-32'
     >
       <LargeSectionHeading>About Me</LargeSectionHeading>
       <p className="mb-3 mx-5 xxl:w-[1200px]">
         After graduating with a degree in{" "}
-        <span className="font-medium">Computer Science and Innovation</span>, I decided to pursue my
+        <span className="font-medium">Computer Science and Innovation</span> from <span className='font-medium'>Champlain College</span>, I decided to pursue my
         passion for programming. I started learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
@@ -26,7 +26,7 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Typescript, MongoDB, and Prisma
         </span>
-        . I am also familiar with Node.js and Javascript. I am always looking to
+        . I am also familiar with Node.js, Javascript and Salesforce -- . I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.

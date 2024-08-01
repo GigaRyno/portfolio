@@ -6,7 +6,7 @@ import { SiPrisma, SiCplusplus } from "react-icons/si";
 import { MdDesignServices } from "react-icons/md";
 import { VscVscode } from "react-icons/vsc";
 import { HiCommandLine } from "react-icons/hi2";
-import { BsPersonFill, BsFilePersonFill } from "react-icons/bs";
+import { BsPersonFill } from "react-icons/bs";
 import { BiLogoPostgresql, BiLogoReact, BiLogoMongodb, BiLogoTypescript, BiLogoPython, BiLogoTailwindCss, BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
 import corpcommentImg from "@/public/corpcomment.png";
 import React from "react";
@@ -30,17 +30,19 @@ export const links = [
         hash: "#about"
     },
     {
-        name: "Experience",
-        hash: "#experience"
+        name: "Projects",
+        hash: "#projects"
     },
     {
         name: "Skills",
         hash: "#skills"
     },
     {
-        name: "Projects",
-        hash: "#projects"
+        name: "Experience",
+        hash: "#experience"
     },
+    
+    
 ] as const;
 
 export const experienceData = [
@@ -62,11 +64,11 @@ export const experienceData = [
         degreeIcon: "",
         degree: "",
         description: [
-            "● Salesforce Development: Developed custom applications and features on the Salesforce Platform. Wrote Apex classes, triggers and Visualforce pages. Worked with Salesforce Lightning components to create interfaces.",
-            "● Data Management: Ensured data quality and accuracy within the system. Created and maintained dashboards for reporting and tracking.",
-            "● Configuration and Customization: Configured Salesforce objects, fields, page layouts, and record types. Customized Salesforce workflows, processes and validation rules.",
-            "● Quality Assurance and Testing: Conducted unit testing and quality checks.",
-            "● Research and Learning: Participated in specific Salesforce training courses.",
+            "Salesforce Development: Developed custom applications and features on the Salesforce Platform. Wrote Apex classes, triggers and Visualforce pages. Worked with Salesforce Lightning components to create interfaces.",
+            "Data Management: Ensured data quality and accuracy within the system. Created and maintained dashboards for reporting and tracking.",
+            "Configuration and Customization: Configured Salesforce objects, fields, page layouts, and record types. Customized Salesforce workflows, processes and validation rules.",
+            "Quality Assurance and Testing: Conducted unit testing and quality checks.",
+            "Research and Learning: Participated in specific Salesforce training courses.",
         ],
         company: "Farm Credit Financial Partners",
         companyicon: React.createElement(FaBuilding),
@@ -80,10 +82,10 @@ export const experienceData = [
         degreeIcon: "",
         degree: "",
         description: [
-            "● Financial Management: Process invoices, manage accounts payable and receivable. Maintain Quickbooks for streamlined business operations.",
-            "● Customer Service: Discuss client needs, answer questions and deliver excellent customer service.",
-            "● Inventory Management: Oversee inventory levels for materials and supplies. Update inventory in Quickbooks system.",
-            "● Technology Management: Manage office technology systems.",
+            "Financial Management: Process invoices, manage accounts payable and receivable. Maintain Quickbooks for streamlined business operations.",
+            "Customer Service: Discuss client needs, answer questions and deliver excellent customer service.",
+            "Inventory Management: Oversee inventory levels for materials and supplies. Update inventory in Quickbooks system.",
+            "Technology Management: Manage office technology systems.",
         ],
         company: "Recovery Room",
         companyicon: React.createElement(FaBuilding),
@@ -97,9 +99,9 @@ export const experienceData = [
         degreeIcon: "",
         degree: "",
         description: [
-            "● Graphic Design: Create and design company logos. Determine appropriate logo usage on apparel.",
-            "● Financial Management: Completed paperwork and formed an LLC. Process apparel orders. Manage accounts payable and receivable. Maintain Quickbooks.",
-            "● Inventory Management: Oversee apparel inventory levels. Update inventory in Quickbooks system. Order apparel as needed.",
+            "Graphic Design: Create and design company logos. Determine appropriate logo usage on apparel.",
+            "Financial Management: Completed paperwork and formed an LLC. Process apparel orders. Manage accounts payable and receivable. Maintain Quickbooks.",
+            "Inventory Management: Oversee apparel inventory levels. Update inventory in Quickbooks system. Order apparel as needed.",
         ],
         company: "Northern Apparel, LLC",
         companyicon: React.createElement(FaBuilding),
@@ -114,8 +116,8 @@ export const projectData = [
     {
         title: "Twitter Clone",
         description: [ 
-            "● Description: Developed a full-stack Twitter clone with user authentication, tweet posting, commenting, liking, following features. Integrated a real-time feed using Next.js and designed a responsive front-end with Tailwind and React.js",
-            "● Key achievements: Implemented user authentication using NextAuth. Designed a scalable database schema to manage user relationships and content.",
+            "Description: Developed a full-stack Twitter clone with user authentication, tweet posting, commenting, liking, following features. Integrated a real-time feed using Next.js and designed a responsive front-end with Tailwind and React.js",
+            "Key achievements: Implemented user authentication using NextAuth. Designed a scalable database schema to manage user relationships and content.",
         ],
         tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "NextAuth"],
         imageUrl: corpcommentImg,
@@ -191,6 +193,10 @@ export const backEndData = [
         icon: React.createElement(FaRust),
     }
 ]
+
+export const linkedInData = { url: "https://www.linkedin.com/in/ryanrlavigne/" } as const;
+
+export const githubData = { url: "https://github.com/GigaRyno" } as const;
 
 export const toolsData = [
     {

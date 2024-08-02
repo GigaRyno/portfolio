@@ -43,7 +43,7 @@ export default function ProjectCard({
               </li>
             ))}
           </ul>
-          <div className="mt-2 leading-relaxed text-[0.7rem] text-gray-700 dark:text-white/70">
+          <div className="mt-2 leading-relaxed text-[0.9rem] text-gray-700 dark:text-white/70">
             {description && Array.isArray(description) && description.length > 0 ? (
               <ol>
                 {description.map((desc, index) => (

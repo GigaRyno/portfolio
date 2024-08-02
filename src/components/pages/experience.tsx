@@ -12,7 +12,6 @@ import { experienceData } from '@/lib/data';
 import { useTheme } from '@/context/theme-context';
 import { motion } from 'framer-motion';
 
-
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
@@ -50,15 +49,15 @@ export default function Experience() {
               }}
             >
             <ExtraSmallSectionHeading className='text-black dark:text-white'>{item.title}</ExtraSmallSectionHeading>
-            <p className="font-normal !mt-0 flex flex-row gap-3 items-center">
+            <p className="!font-normal !mt-0 flex flex-row gap-3 items-center">
               {item.degreeIcon}
               {item.degree}
             </p>
-            <p className="font-normal !mt-0 flex flex-row gap-3 items-center">
+            <p className="!font-normal !mt-0 flex flex-row gap-3 items-center">
               {item.companyicon}
               {item.company}
             </p>
-            <p className="font-normal !mt-0 flex flex-row gap-3 items-center">
+            <p className="!font-normal !mt-0 flex flex-row gap-3 items-center">
               {item.locationicon}
               {item.location}
             </p>

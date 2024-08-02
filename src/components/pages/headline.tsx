@@ -9,7 +9,8 @@ import { HiDownload } from "react-icons/hi";
 import { Roboto } from "next/font/google";
 import { FaGithubSquare } from "react-icons/fa";
 import Link from 'next/link';
-import { githubData, linkedInData } from '@/lib/data';
+import Image from 'next/image';
+import { githubData, linkedInData, profilePicture } from '@/lib/data';
 
 const roboto = Roboto({ 
     subsets: ["latin"],
@@ -29,7 +30,24 @@ export default function Headline() {
     >
         <div className='flex items-center justify-center'>
             <div className='relative'>
-
+                <motion.div 
+                    initial={{ opacity: 0, scale: 0}}
+                    animate={{opacity: 1, scale: 1}}
+                    transition={{
+                        type: "tween",
+                        duration: 0.2,
+                    }}
+                >
+                    <Image
+                        src={profilePicture.src} 
+                        alt={'Ryan LaVigne'}
+                        width="192"
+                        height="192"
+                        quality="95"
+                        priority={true}
+                        className='mt-8 h-36 w-36 rounded-full object-cover object-top border-[0.35rem] dark:border-white border-gray-900 shadow-xl'
+                    />
+                </motion.div>
             </div>
         </div>
         <motion.h1
@@ -37,7 +55,7 @@ export default function Headline() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
         >
-            <span className="font-semibold">Hello, I'm </span><span className='!underline !underline-offset-[3px] bg-clip-text text-transparent text-accent_light_blue bg-accent_light_blue'>Ryan LaVigne</span>. I'm a{" "}
+            <span className="font-semibold">Hello, I'm </span><span className='bg-clip-text text-accent_light_blue underline underline-offset-[3px]'>Ryan LaVigne</span>. I'm a{" "}
             <span className="font-bold">full-stack developer</span> with{" "}
             <span className="font-bold">2 years</span> of experience. I enjoy
             building <span className="italic">Responsive & Innovative Webites</span>.
@@ -67,7 +85,7 @@ export default function Headline() {
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
             </a> */}
         </motion.div>
-        <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 mt-[1rem] text-[1.35rem]'>
+        <motion.div className='flex flex-row items-center justify-center gap-[0.75rem] mt-[1rem] text-[1.35rem]'>
             <a
                 className="bg-gray-200 p-4 h-12 w-12 text-gray-700 flex items-center rounded-full transition cursor-pointer borderBlack
                            hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15] active:scale-105  

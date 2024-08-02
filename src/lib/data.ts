@@ -9,6 +9,7 @@ import { HiCommandLine } from "react-icons/hi2";
 import { BsPersonFill } from "react-icons/bs";
 import { BiLogoPostgresql, BiLogoReact, BiLogoMongodb, BiLogoTypescript, BiLogoPython, BiLogoTailwindCss, BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
 import corpcommentImg from "@/public/corpcomment.png";
+import profilepic from "@/public/profilepicture.jpg";
 import React from "react";
 
 export const colors = [
@@ -197,6 +198,8 @@ export const backEndData = [
 export const linkedInData = { url: "https://www.linkedin.com/in/ryanrlavigne/" } as const;
 
 export const githubData = { url: "https://github.com/GigaRyno" } as const;
+
+export const profilePicture = { src: profilepic } as const;
 
 export const toolsData = [
     {

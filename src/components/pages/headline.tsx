@@ -43,7 +43,7 @@ export default function Headline() {
                         alt={'Ryan LaVigne'}
                         width="192"
                         height="192"
-                        quality="95"
+                        quality="100"
                         priority={true}
                         className='mt-8 h-36 w-36 rounded-full object-cover object-top border-[0.35rem] dark:border-white border-gray-900 shadow-xl'
                     />
@@ -81,9 +81,10 @@ export default function Headline() {
             href="/CV.pdf"
             download
             >
-            Download CV{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+                Download CV{" "}
+                <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
             </a> */}
+
         </motion.div>
         <motion.div className='flex flex-row items-center justify-center gap-[0.75rem] mt-[1rem] text-[1.35rem]'>
             <a
